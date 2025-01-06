@@ -11,7 +11,7 @@ theme:
     - content.tabs.link
     - content.code.annotation
     - content.code.copy
-  language: en
+  # language: et
   palette:
     - scheme: default
       toggle:
@@ -26,7 +26,22 @@ theme:
       primary: orange
       accent: lime
 
+plugins:
+  - search
+  - i18n: # https://gitlab.com/mkdocs-i18n/mkdocs-i18n/-/blob/main/mkdocs.yml
+      default_language: et
+      languages:
+        en: English
+        et: Eesti keel
+
 extra:
+  alternate:
+    - name: Estonian
+      link: /et/
+      lang: et
+    - name: English
+      link: /en/
+      lang: en
   social:
     - icon: fontawesome/brands/linkedin
       link: https://www.linkedin.com/company/oixiodigital/
@@ -47,3 +62,7 @@ markdown_extensions:
 
 copyright: |
   &copy; 2025 <a href="https://oixio.eu/digital/"  target="_blank" rel="noopener">OIXIO Digital AS</a>
+
+nav:
+  - index.md
+  - index.en.md
