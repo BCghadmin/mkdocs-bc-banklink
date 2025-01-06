@@ -1,1 +1,1 @@
-# mkdocs-bc-banklink
+# mkdocs-bc
